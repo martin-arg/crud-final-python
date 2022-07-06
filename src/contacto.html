@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactanos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/icono.svg">
+        <nav>
+
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="contacto.html">Contactenos</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <h1>contactanos</h1>
+        <section class="formulario">
+            <form action="#" method="post" onsubmit="return validar();">
+                <div class="datos">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="Nombre">
+                </div>
+                <div class="datos">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="Apellido">
+                </div>
+                <div class="datos">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="datos">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" name="telefono">
+                </div>
+                <div class="datos">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escriba su Mensaje"
+                        style="height:200px"></textarea>
+                </div>
+                <div class="boton">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <br>
+        <nav>
+
+
+        </nav>
+        <p>Derechos reservados 2022</p>
+        <br>
+
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
