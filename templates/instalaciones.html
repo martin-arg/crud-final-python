@@ -2,28 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestras Instalaciones</title>
-    <link rel="stylesheet" href="./css/style.css">
+    {%  include 'includes/head.html' %}
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="./img/icono.svg" >
-        <nav>
-                
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="instalaciones.html">Instalaciones</a></li>
-                <li><a href="contacto.html">Contactenos</a></li>
-            </ul>
-        </nav>
-        
-    
-    </header>
+{% include 'includes/header.html' %}
     <main>
         <div>
             <h1>Nuestra Ubicacion</h1>
@@ -58,21 +42,7 @@
 
 
     </main>
-    <footer>
-        <br>
-        <nav>
-            <a href="https://www.facebook.com">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com">
-                <i class="fa-brands fa-twitter "></i>
-            </a>
-        </nav>
-        <p>Derechos reservados 2022</p>
-        <br>
-
-    </footer>
-    <script src="./js/main.js"></script>
+{% include 'includes/footer.html' %}
 </body>
 
 </html>
