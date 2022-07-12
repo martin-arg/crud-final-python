@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template
+from flask_login import login_required, current_user
 
 principal = Blueprint('principal', __name__)
 
@@ -22,6 +23,13 @@ def contactos():
 def instalaciones():
     return render_template('instalaciones.html')
 
+
 @principal.route('/login')
 def login():
     return render_template('login.html')
+
+
+@principal.route('/profile')
+@login_required
+def profile():
+    return render_template('views/profile.html', name=current_user.nombre)

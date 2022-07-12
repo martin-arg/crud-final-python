@@ -1,11 +1,11 @@
-from app import db,ma
+import app
 
 
-class Socios(db.Model):
-    socioID = db.Column(db.Integer, primary_key = True)
-    name = db.Column(db.String(100))
-    dni = db.Column(db.Integer)
-    email = db.Column(db.String(100))
+class Socios(app.db.Model):
+    socioID = app.db.Column(app.db.Integer, primary_key = True)
+    name = app.db.Column(app.db.String(100))
+    dni = app.db.Column(app.db.Integer)
+    email = app.db.Column(app.db.String(100))
 
     def __init__(self, name, dni, email):
         self.name = name

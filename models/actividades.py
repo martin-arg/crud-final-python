@@ -1,13 +1,13 @@
-from app import db, ma
+import app
 
 
-class Actividades(db.Model):
-    actividadID = db.Column(db.Integer, primary_key=True)
-    actividad = db.Column(db.String(100))
-    responsableID = db.Column(db.Integer)
-    dias = db.Column(db.String(100))
-    horario = db.Column(db.String(100))
-    asistentesMax = db.Column(db.Integer)
+class Actividades(app.db.Model):
+    actividadID = app.db.Column(app.db.Integer, primary_key=True)
+    actividad = app.db.Column(app.db.String(100))
+    responsableID = app.db.Column(app.db.Integer)
+    dias = app.db.Column(app.db.String(100))
+    horario = app.db.Column(app.db.String(100))
+    asistentesMax = app.db.Column(app.db.Integer)
 
     def __init__(self, actividad, responsableID, dias, horario, asistentesMax):
         self.actividad = actividad
