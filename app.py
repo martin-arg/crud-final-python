@@ -36,5 +36,5 @@ app.register_blueprint(routes.principal.principal)
 app.register_blueprint(routes.auth.auth)
 app.register_blueprint(routes.profile.profile)
 
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+# if __name__ == '__main__':
+#     app.run(port=5000, debug=True)
