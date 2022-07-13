@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{%  include 'includes/head.html' %}
     <title>Login</title>
-    {%  include 'includes/head.html' %}
-</head>
-<body>
 {% include 'includes/header.html' %}
 <main >
-<form class="w-75" action="/sign-up" method="post">
+<form class="w-50" action="/sign-up" method="post">
   <div class="mb-3">
     <label for="usuario" class="form-label">Usuario</label>
     <input type="email" class="form-control" name="usuario" id="usuario" value="1@2.com">
@@ -22,6 +17,3 @@
 </form>
     </main>
 {% include 'includes/footer.html' %}
-</body>
-
-</html>

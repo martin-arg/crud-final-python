@@ -33,3 +33,8 @@ def login():
 @login_required
 def profile():
     return render_template('views/profile.html', name=current_user.nombre)
+
+@principal.route('/crearsocios')
+@login_required
+def enviar_crearsocios():
+    return render_template('views/createSocios.html')

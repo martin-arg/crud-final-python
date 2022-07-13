@@ -13,7 +13,7 @@ def login():
     # passwd = models.usuarios.Usuarios.query.filter_by(clave=clave).first()
     if user:
         login_user(user, remember=True)
-        print("funciono")
+
         return redirect(url_for('principal.profile'))
         return render_template('views/profile.html')
 

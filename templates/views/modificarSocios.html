@@ -1,22 +1,22 @@
 {% include 'includes/head.html' %}
-<title>Cargar socios</title>
+<title>Modificar Socios</title>
 {% include 'includes/header.html' %}
 <main>
-    <form class="row gy-2 gx-3 align-items-center" action="/socioscrear" method="post">
+<form class="row gy-2 gx-3 align-items-center" action="/modificarSocios/{{ socio.socioID }}" method="post">
   <div class="col-auto">
     <label class="visually-hidden" for="nombre">Nombre</label>
-    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+    <input type="text" class="form-control" id="nombre" name="name" value="{{ socio.name }}">
   </div>
   <div class="col-auto">
     <label class="visually-hidden" for="email">Corre Electronico</label>
     <div class="input-group">
       <div class="input-group-text">@</div>
-      <input type="text" class="form-control" id="email" name="email" placeholder="Correo Electronico">
+      <input type="text" class="form-control" id="email" name="email" value="{{ socio.email }}">
     </div>
   </div>
         <div class="col-auto">
             <label class="visually-hidden" for="dni">DNI</label>
-            <input type="text"  class="form-control" id="dni" name="dni" placeholder="DNI">
+            <input type="text"  class="form-control" id="dni" name="dni" value="{{ socio.dni }}">
         </div>
 
 
@@ -24,5 +24,7 @@
     <button type="submit" class="btn btn-primary">Guardar</button>
   </div>
 </form>
-</main>
+
+
+    </main>
 {% include 'includes/footer.html' %}
